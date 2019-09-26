@@ -1,0 +1,30 @@
+<html>
+  <head>
+      <title>
+          A-Frame Project
+      </title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js">
+    </script>
+  </head>
+  <body>
+      <a-scene>
+        <a-sky color="#F2BF0F" radius="10"></a-sky>
+        <a-box color="
+#386fbc" src="BlueGreenBackground.jpg" height="5" depth="5" width="5" position="0 0 0">
+            <a-sphere position="4.4 2 2" radius="2" color="red"></a-sphere>
+            <a-box color="red" height=".5" depth="1" width="5" position="0 2.2 -3"></a-box>
+            <a-box color="red" height=".5" depth="1" width="5" position="-3 2.2 0" rotation=" 0 90 0"></a-box>
+            <a-cylinder color="#F2BF0F" radius="2" width="10" position=".5 3 -.5" rotation=" 0 0 0 ">
+                <a-box color = "red" height=".3" depth="1" width="1" position= "-.5 .5 0"></a-box>
+            </a-cylinder>
+        </a-box>
+          
+        <a-entity light="type: ambient; color: #2f4f4f"></a-entity>
+          <a-entity light="type: directional; color: #c0c0c0" position="-1 2 0"></a-entity>
+          
+        <a-entity position="1 6 10">
+            <a-camera></a-camera>
+        </a-entity>
+          
+      </a-scene>
+    </body>
